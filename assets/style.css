@@ -99,6 +99,8 @@ body {
 .gallery .nav {
     justify-content: center;
 }
+
+/* Style for active filter */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
     color: #fff;
