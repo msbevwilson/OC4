@@ -22,18 +22,18 @@ body {
     font-size: 26px;
 }
 
-.nav ul {
+nav ul {
     display: flex;
     list-style-type: none;
     font-size: 14px;
     margin-bottom: 0;
 }
 
-.nav li {
+nav li {
     padding-inline: 10px;
 }
 
-.nav a {
+nav a {
     text-decoration: none;
     color: #000;
 }
@@ -96,14 +96,14 @@ body {
     text-align: center;
     padding-block: 2em;
 }
-.gallery .nav {
+.gallery nav {
     justify-content: center;
 }
 
 /* Style for active filter */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    color: #fff;
+    color: #000000;
     background-color: #beb45a;
     border-radius: 0;
 }
@@ -114,7 +114,7 @@ body {
 /* Ensure .active-tag has the same styles as .nav-link.active */
 .nav-link.active-tag {
     background-color: #beb45a; /* Golden background */
-    color: #fff;
+    color: #000000;
 }
 
 .item-column {
