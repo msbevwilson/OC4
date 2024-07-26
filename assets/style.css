@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-.top-header .name {
+h1 {
     font-size: 26px;
 }
 
@@ -83,6 +83,7 @@ nav a {
     font-weight: 800;
     font-style: italic;
     width: 60%;
+    font-size: 16px;
 }
 #about-me p {
     width: 80%;
@@ -252,8 +253,7 @@ input[type="submit"] {
         margin-top: 0;
         margin-bottom: 1em;
     }
-    #about-me h6,
-    #about-me p {
+    #about-me {
         width: 100%;
     }
 }
@@ -314,4 +314,7 @@ input[type="submit"] {
         right: 0;
         z-index: -1;
     }
+}
+footer {
+    text-align: center;
 }
