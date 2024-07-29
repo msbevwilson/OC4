@@ -13,7 +13,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nina-carducci.github.io/" />
     <meta property="og:description" content="Nina photographe, pour des shootings photos, des retouches ou des albums de pro !" />
-    <meta property="og:image" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
+	<!-- TODO -->
+    <meta property="og:image" content="./assets/images/nina.webp" />
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NinaPhoto" />
@@ -33,6 +34,16 @@
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
 </head>
+
+
+<!-- TODO
+minifier fichier js et css
+changer img Opengraph => les balises img pour les RS doivent mener à la phot de Nina pas de son compte insta 
+bug quand on utilise les filtres => le carousel passe en display none
+et mettre le cahier des recettes sous la bonne forme avec le tableau étou
+https://www.opengraph.xyz/ -->
+
+
 <body>
 <div itemscope itemtype="http://schema.org/Photograph" class="top-header">
     <h1 class="name" itemprop="name">Nina Carducci</h1>
@@ -80,6 +91,7 @@
     </div>
 </div>
 
+
 <div id="about">
     <div class="picture left">
         <img src="./assets/images/nina.webp" alt="Photo de Nina" itemprop="image">
@@ -93,7 +105,7 @@
 </div>
 
 <div id="gallery">
-    <h2 class="title">TEST</h2>
+    <h2 class="title">Portfolio</h2>
     <div class="container py-3">
         <div class="gallery" style="display: none">
             <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Image de concert" itemprop="image"/>
