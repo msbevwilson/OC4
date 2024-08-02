@@ -201,12 +201,16 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
+      // bouton "Tous" actif par défaut 
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
-      $.each(tags, function (index, value) {
+      // Pour chaque tag contenu dans le tableau "tags" on crée une li avec une classe et un span
+        $.each(tags, function (index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
+      // Création de la liste ul qui contient les listes li des boutons de filtres
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
+      // Ajout des Tags au DOM
       if (position === "bottom") {
         gallery.append(tagsRow);
       } else if (position === "top") {
@@ -215,21 +219,36 @@
         console.error(`Unknown tags position: ${position}`);
       }
     },
+   
+    // VERSION INITIALE
     filterByTag() {
+      // on check si le l'élément cliqué a la classe active-tag, si oui, la fonction s'arrête ici
       if ($(this).hasClass("active-tag")) {
         return;
       }
-      $(".active").removeClass("active");
-      $(this).addClass("active");
+
+      // ici on retire les tags active et active-tag 
+      $(".active-tag").removeClass("active active-tag");
+      // pour les ajouter au nouveel élément cliqué 
+      // Dans la version initial on ajoute la classe active-tag MAIS PAS LA CLASSE active => le bug est ici
+      $(this).addClass("active active-tag");
+
       var tag = $(this).data("images-toggle");
-      $(".gallery-item").each(function () {
-        $(this).parents(".item-column").hide();
+
+      $(".gallery-item").each(function() {
+        $(this)
+          .parents(".item-column")
+          .hide();
         if (tag === "all") {
-          $(this).parents(".item-column").show(300);
+          $(this)
+            .parents(".item-column")
+            .show(300);
         } else if ($(this).data("gallery-tag") === tag) {
-          $(this).parents(".item-column").show(300);
+          $(this)
+            .parents(".item-column")
+            .show(300);
         }
       });
-    },
+    }
   };
 })(jQuery);
