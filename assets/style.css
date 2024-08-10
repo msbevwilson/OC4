@@ -90,8 +90,8 @@ nav a {
     font-size: 14px;
 }
 
-#gallery {
-    /*	min-height: 100vh; */
+.gallery {
+    display: none;
 }
 .title {
     text-align: center;
