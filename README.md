@@ -1,4 +1,4 @@
-## Nina Carducci
+# Nina Carducci
 
 Improve the SEO, performance and accessibility of a website by identifying problems and applying fixes, using tools such as Chrome Dev Tools, Lighthouse and Wave.
 
@@ -32,3 +32,6 @@ The gallery supports filtering images by tags. Users can click on tags to view o
 ### Contact Form
 
 The site includes a contact form that allows users to send inquiries or quote requests. The form includes fields for name, email, and message.
+
+The presentation on the site improvement process in French is available here:
+[Optimisation du site web de Nina Carducci.pptx](https://github.com/user-attachments/files/18289398/Optimisation.du.site.web.de.Nina.Carducci.pptx)
