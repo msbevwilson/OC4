@@ -198,7 +198,7 @@
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+      }" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -220,10 +220,10 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><a class="nav-link active active-tag" href="#" data-images-toggle="all">Tous</a></li>';
+        '<li class="nav-item"><a class="nav-link active active-tag" href="#gallery" data-images-toggle="all">Tous</a></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
-                <a class="nav-link" href="#" data-images-toggle="${value}">${value}</a></li>`;
+                <a class="nav-link" href="#gallery" data-images-toggle="${value}">${value}</a></li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
